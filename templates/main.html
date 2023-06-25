@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Form</title>
+  <link href='https://fonts.googleapis.com/css?family=Baloo' rel='stylesheet'>
+  <style>
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+    body
+    {
+      background-image: url('main_img.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    #box
+    {
+      width: 50%;
+      height: 350px ;
+      margin-left: 400px;
+      margin-right: 400px;
+      margin-top: 120px;
+    }
+    #weather
+    {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 60px;
+      font-family: 'Baloo';
+    }
+    #forms
+    {
+      height:340px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      border: 5px solid black;
+    } 
+    .form-group
+    {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      width: 100%;
+    }
+    .form-group>label
+    {
+      position: absolute;
+      height: 20px;
+      left: 500px;
+      font-size: 20px;
+    } 
+    .form-control
+    {
+      padding-left: 15px;
+      width: 300px;
+      height: 20px;
+      position: relative;
+      left: 100px;
+      border-radius: 5px;
+    }
+    .form-control:hover
+    {
+      background-color: rgb(222, 225, 228);
+    }
+    .form-group>button
+    {
+      width: 200px;
+      height: 25px;
+      border: 2px solid black;
+    }
+    #submit
+    {
+      border-radius: 10px;
+    }
+    #submit:hover
+    {
+      cursor: pointer;
+      background-color: rgb(116, 221, 233);
+    }
+  </style>
+</head>
+<body>
+    <h1 id="weather">Weather Data</h1>
+    <div id="box">
+      <form action="/submit" method='post' id="forms">
+        <div class="form-group">
+          <label for="precipitation">Precipitation:</label>
+        <input type="text" class="form-control" id="precipitation" name="precipitation" placeholder="Enter precipitation">
+      </div>
+      <div class="form-group">
+        <label for="temp-max">Maximum Temperature:</label>
+        <input type="text" class="form-control" id="temp-max" name="temp-max" placeholder="Enter maximum temperature">
+      </div>
+      <div class="form-group">
+        <label for="temp-min">Minimum Temperature:</label>
+        <input type="text" class="form-control" id="temp-min" name="temp-min" placeholder="Enter minimum temperature">
+      </div>
+      <div class="form-group">
+        <label for="wind">Wind:</label>
+        <input type="text" class="form-control" id="wind" name="wind" placeholder="Enter wind speed">
+      </div>
+      <div class="form-group">
+        <button type="submit" id="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+  </body>
+</html>

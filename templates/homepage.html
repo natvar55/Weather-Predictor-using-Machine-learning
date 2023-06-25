@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <style>
+        body
+        {
+            background-image: url('weather.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #heading
+        {
+            margin-top: 200px;
+            text-align: center;
+            font-size: 50px;
+            color: #0a0a0a;
+        }
+        #content
+        {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 40px;
+            color: #0a0a0a;
+        }
+        #button-go
+        {
+            text-align: center;
+        }
+        #go
+        {
+            width: 200px;
+            height: 30px;
+            background-color: rgb(33, 33, 185);
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            transition-property: border-radius;
+            transition: all 0.5s ease-in-out .3s;
+        }
+        #go:hover
+        {
+            cursor: pointer;
+            box-shadow: 5px 2px green;;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">Welcome!</h1>
+    <p id="content">
+        Please Enter the data to predict the weather.
+    </p>
+    <form action="/main" id="button-go">
+        <input type="submit" 
+        id="go" value="GO">
+    </form>
+</body>
+</html>

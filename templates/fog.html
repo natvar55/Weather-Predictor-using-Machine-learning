@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fog</title>
+    <style>
+        body
+        {
+            background-image: url('fog.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #content
+        {
+            height: 100%;
+            margin-top: 300px;
+            text-align: center;
+            color: #1536f3;
+            font-size: 70px;
+        }
+        #go-back
+        {
+            width: 400px;
+            height: 28px;
+            background-color: #1536f3;
+            border-radius: 10px;
+            transition-property: border-radius;
+            transition: all 0.5s ease-in-out .3s;
+        }
+        #go-back:hover
+        {
+            cursor: pointer;
+            box-shadow: 2px 2px #1536f3;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <p>The weather is Foggy outside.</p>
+        <form action="/main">
+            <input type="submit" id="go-back" value="GO back">
+        </form>
+    </div>
+</body>
+</html>
